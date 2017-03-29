@@ -10,10 +10,16 @@ tags: 运维
 MySQL安装完毕之后，会自动启动。先停机，然后修改配置。新版的目录一般都是 `/etc/mysql/my.cnf`，修改datadir到相应的目录
 
         sudo service mysql stop
+
+在配置文件中修改
+
         datadir   = /data/mysql/mysql
+
+修改目标目录的权限
+
         sudo chown -R mysql:mysql /data/mysql
 
-然后把之前的数据转移到这个目录。推荐使用rsync，可以保留之前的文件的权限。我第一次不成功，就是因为有部分文件应该roo用户的，而我给改成了mysql
+然后把之前的数据转移到这个目录。推荐使用rsync，可以保留之前的文件的权限。我第一次不成功，就是因为有部分文件应该root用户的，而我给改成了mysql
 
         sudo rsync -av /var/lib/mysql /data/mysql
 
