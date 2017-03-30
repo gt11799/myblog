@@ -21,7 +21,7 @@ tags: [运维,Docker]
 
 启动sentry，这里我也传了email的配置，结果总是发邮件超时。这里我把docker中的9000端口映射到了宿主的9000端口
 
-        docker run -d --name falcon-sentry -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres -p 9000:9000 sentry
+        docker run -d --name my-sentry -e SENTRY_SECRET_KEY='<secret-key>' --link sentry-redis:redis --link sentry-postgres:postgres -p 9000:9000 sentry
 
 启动sentry的cron 和 celery worker
 
