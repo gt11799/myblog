@@ -31,14 +31,14 @@ function export_file() {
     var export_url = '/export';
     var url = window.location.href;
     var params = url.split('?')[1];
-    if (typeof(params) == undefined) {
+    if (typeof(params) !== undefined) {
         export_url += '?' + params;
     };
-    window.open(export_url);
+    window.location.href = export_url;
 }
 </script>
 <li>
-    <a href="#" class="grp-state-focus" onclick="export_file()">导出</a>
+    <a href="#" class="grp-state-focus" onclick="export_file()" download="file.xls">导出</a>
 </li>
 {{ block.super }}
 {% endblock %}
