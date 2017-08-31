@@ -1,6 +1,6 @@
 title: 解决docker-compose启动时urllib3报错的问题
 date: 2017-08-31 20:34:31
-tags: 运维
+tags: docker
 ---
 
 使用pip安装了docker-compose之后，启动时报了如下如下错误<!--more-->

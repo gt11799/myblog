@@ -1,6 +1,6 @@
 title: 如何安装docker
 date: 2017-08-31 20:42:15
-tags: 运维
+tags: docker
 ---
 
 在我国的网络环境下，如何安装docker呢<!--more-->
