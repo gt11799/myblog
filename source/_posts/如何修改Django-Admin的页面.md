@@ -3,7 +3,7 @@ date: 2017-08-02 21:04:58
 tags: Python
 ---
 
-今天有人求助我如何修改Django Admin后台的页面，比如在右上角加个按钮
+今天有人求助我如何修改Django Admin后台的页面，比如在右上角加个按钮<!--more-->
 
 ![](http://7xlo8n.com1.z0.glb.clouddn.com/WX20170802-210835.png)
 
