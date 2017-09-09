@@ -55,3 +55,12 @@ apt-get install python-openssl
 ```
 
 完美解决
+
+---
+
+发现了一个可以避免的办法，就是不使用ubuntu自带的pip安装
+
+```
+sudo easy_install pip
+pip install docker-compose
+```
